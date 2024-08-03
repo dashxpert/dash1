@@ -1,0 +1,14 @@
+<!-- templates/payment_failure.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="alert alert-danger text-center mt-5" role="alert">
+        <h1 class="display-4">Payment Failed</h1>
+        <p class="lead">We're sorry, but your payment could not be processed. Please try again later or contact support if the problem persists.</p>
+        <a href="{% url 'razorpay_payment' %}" class="btn btn-primary">Try Again</a>
+        <a href="{% url 'home' %}" class="btn btn-secondary">Back to Home</a>
+    </div>
+</div>
+{% endblock %}

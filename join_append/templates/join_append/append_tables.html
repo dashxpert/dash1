@@ -1,0 +1,20 @@
+<!-- join_append/templates/join_append/append_tables.html -->
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append Tables</title>
+</head>
+<body>
+    <h1>Tables Appended Successfully</h1>
+    <a href="{% url 'append_tables' %}">Download Appended Table</a>
+</body>
+</html>
+
+{% endblock content %}

@@ -1,0 +1,313 @@
+----------------------------------------
+/var/log/eb-hooks.log
+----------------------------------------
+
+
+----------------------------------------
+/var/log/nginx/access.log
+----------------------------------------
+93.174.93.12 - - [03/Aug/2024:04:30:33 +0000] "\x16\x03\x02\x01o\x01\x00\x01k\x03\x02RH\xC5\x1A#\xF7:N\xDF\xE2\xB4\x82/\xFF\x09T\x9F\xA7\xC4y\xB0h\xC6\x13\x8C\xA4\x1C=\x22\xE1\x1A\x98 \x84\xB4,\x85\xAFn\xE3Y\xBBbhl\xFF(=':\xA9\x82\xD9o\xC8\xA2\xD7\x93\x98\xB4\xEF\x80\xE5\xB9\x90\x00(\xC0" 400 150 "-" "-" "-"
+14.102.93.212 - - [03/Aug/2024:05:22:57 +0000] "GET / HTTP/1.1" 200 3541 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0" "-"
+14.102.93.212 - - [03/Aug/2024:05:22:58 +0000] "GET /favicon.ico HTTP/1.1" 200 3541 "http://dashxpert-env.eba-rhsbvkzw.eu-north-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0" "-"
+14.102.93.212 - - [03/Aug/2024:05:25:58 +0000] "GET / HTTP/1.1" 200 3541 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0" "-"
+14.102.93.212 - - [03/Aug/2024:05:26:05 +0000] "GET /favicon.ico HTTP/1.1" 200 3541 "http://dashxpert-env.eba-rhsbvkzw.eu-north-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0" "-"
+205.210.31.5 - - [03/Aug/2024:05:50:52 +0000] "\x16\x03\x01\x00\xCA\x01\x00\x00\xC6\x03\x03\x9A\xF3\x84\x0B\xAF\x8E\x05\x97\xD5\xA6O\xB6\xB4y\x8D\xA8\x19\xA9\xD0WN\xF1jb\x01Lc@SJ\xA0\x85\x00\x00h\xCC\x14\xCC\x13\xC0/\xC0+\xC00\xC0,\xC0\x11\xC0\x07\xC0'\xC0#\xC0\x13\xC0\x09\xC0(\xC0$\xC0\x14\xC0" 400 150 "-" "-" "-"
+205.210.31.5 - - [03/Aug/2024:05:50:52 +0000] "\x16\x03\x01\x00\xEE\x01\x00\x00\xEA\x03\x03!\xEF\x90i\xBB\xD7GO\xEB\xC0\x1C\xDD\xB2Sa)u\xC3\xC3%\xBE\xFE\x13#\xF4\xCDY\x9D\xD7\xD3\xC9\xCA \xFE\xCF\x8Fb{UMq\xDBW" 400 150 "-" "-" "-"
+14.102.93.212 - - [03/Aug/2024:06:30:33 +0000] "GET / HTTP/1.1" 502 552 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0" "-"
+14.102.93.212 - - [03/Aug/2024:06:30:33 +0000] "GET /favicon.ico HTTP/1.1" 502 552 "http://dashxpert-env.eba-rhsbvkzw.eu-north-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0" "-"
+14.102.93.212 - - [03/Aug/2024:06:32:49 +0000] "GET / HTTP/1.1" 502 552 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0" "-"
+14.102.93.212 - - [03/Aug/2024:06:32:49 +0000] "GET /favicon.ico HTTP/1.1" 502 552 "http://dashxpert-env.eba-rhsbvkzw.eu-north-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0" "-"
+14.102.93.212 - - [03/Aug/2024:07:29:38 +0000] "GET / HTTP/1.1" 502 552 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0" "-"
+14.102.93.212 - - [03/Aug/2024:07:29:38 +0000] "GET /favicon.ico HTTP/1.1" 502 552 "http://dashxpert-env.eba-rhsbvkzw.eu-north-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0" "-"
+87.236.176.81 - - [03/Aug/2024:07:56:53 +0000] "GET / HTTP/1.1" 502 150 "-" "Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)" "-"
+64.62.197.119 - - [03/Aug/2024:08:22:51 +0000] "GET / HTTP/1.1" 502 150 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:126.0) Gecko/20100101 Firefox/126.0" "-"
+64.62.197.107 - - [03/Aug/2024:08:24:03 +0000] "GET /webui/ HTTP/1.1" 502 552 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" "-"
+64.62.197.111 - - [03/Aug/2024:08:24:57 +0000] "GET /favicon.ico HTTP/1.1" 502 552 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" "-"
+185.254.196.173 - - [03/Aug/2024:08:45:33 +0000] "GET /.env HTTP/1.1" 502 552 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36" "-"
+185.254.196.173 - - [03/Aug/2024:08:45:34 +0000] "POST / HTTP/1.1" 502 552 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36" "-"
+80.82.77.202 - - [03/Aug/2024:09:08:38 +0000] "GET / HTTP/1.0" 502 150 "-" "Opera/9.80 (Android; Opera Mini/9.0.1829/66.318; U; en) Presto/2.12.423 Version/12.16" "-"
+209.97.181.114 - - [03/Aug/2024:09:35:37 +0000] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03\xE4\xE5\xEF/~\x0Bbw\x09\x9A\xF6\x9F\xCB \xBDH\x8C\x1Bk\x9A\xF9\xA4z\x98B\x04_\xCA\x92" 400 150 "-" "-" "-"
+209.97.181.114 - - [03/Aug/2024:09:35:37 +0000] "\x16\x03\x01\x00{\x01\x00\x00w\x03\x03fV\x10\x13\xA8\xFB\x03\x13\xA6\x0B\xB7\xE3X2\xC8\xD8\xC1\x1F\xFD\xAD\xA4\xCF\xDC\xAA\x0B@\xDC\xC5ZK\xC0(\x00\x00\x1A\xC0/\xC0+\xC0\x11\xC0\x07\xC0\x13\xC0\x09\xC0\x14\xC0" 400 150 "-" "-" "-"
+209.97.181.114 - - [03/Aug/2024:09:35:37 +0000] "GET / HTTP/1.1" 502 552 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" "-"
+209.97.181.114 - - [03/Aug/2024:09:35:37 +0000] "GET /form.html HTTP/1.1" 502 150 "-" "curl/8.1.2" "-"
+209.97.181.114 - - [03/Aug/2024:09:35:37 +0000] "GET /upl.php HTTP/1.1" 502 150 "-" "Mozilla/5.0" "-"
+209.97.181.114 - - [03/Aug/2024:09:35:37 +0000] "GET /t4 HTTP/1.1" 502 150 "-" "Mozilla/5.0" "-"
+209.97.181.114 - - [03/Aug/2024:09:35:37 +0000] "GET /geoip/ HTTP/1.1" 502 552 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" "-"
+209.97.181.114 - - [03/Aug/2024:09:35:37 +0000] "GET /favicon.ico HTTP/1.1" 502 552 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" "-"
+209.97.181.114 - - [03/Aug/2024:09:35:37 +0000] "GET /1.php HTTP/1.1" 502 552 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" "-"
+209.97.181.114 - - [03/Aug/2024:09:35:37 +0000] "GET /systembc/password.php HTTP/1.1" 502 552 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" "-"
+209.97.181.114 - - [03/Aug/2024:09:35:37 +0000] "GET /password.php HTTP/1.1" 502 552 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" "-"
+14.102.93.212 - - [03/Aug/2024:09:47:32 +0000] "GET / HTTP/1.1" 502 552 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0" "-"
+14.102.93.212 - - [03/Aug/2024:09:47:33 +0000] "GET /favicon.ico HTTP/1.1" 502 552 "http://dashxpert-env.eba-rhsbvkzw.eu-north-1.elasticbeanstalk.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0" "-"
+
+
+----------------------------------------
+/var/log/nginx/error.log
+----------------------------------------
+2024/08/03 04:24:53 [warn] 2065#2065: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2024/08/03 04:24:53 [warn] 2099#2099: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2024/08/03 04:24:53 [warn] 2100#2100: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2024/08/03 04:30:33 [warn] 2103#2103: *1 using uninitialized "year" variable while logging request, client: 93.174.93.12, server: , request: "o kRH≈#˜:Nﬂ‚¥Ç/ˇ	Tüßƒy∞h∆å§="·ò Ñ¥,ÖØn„Yªbhlˇ(=':©ÇŸo»¢◊ìò¥ÔÄÂπê (¿"
+2024/08/03 04:30:33 [warn] 2103#2103: *1 using uninitialized "month" variable while logging request, client: 93.174.93.12, server: , request: "o kRH≈#˜:Nﬂ‚¥Ç/ˇ	Tüßƒy∞h∆å§="·ò Ñ¥,ÖØn„Yªbhlˇ(=':©ÇŸo»¢◊ìò¥ÔÄÂπê (¿"
+2024/08/03 04:30:33 [warn] 2103#2103: *1 using uninitialized "day" variable while logging request, client: 93.174.93.12, server: , request: "o kRH≈#˜:Nﬂ‚¥Ç/ˇ	Tüßƒy∞h∆å§="·ò Ñ¥,ÖØn„Yªbhlˇ(=':©ÇŸo»¢◊ìò¥ÔÄÂπê (¿"
+2024/08/03 04:30:33 [warn] 2103#2103: *1 using uninitialized "hour" variable while logging request, client: 93.174.93.12, server: , request: "o kRH≈#˜:Nﬂ‚¥Ç/ˇ	Tüßƒy∞h∆å§="·ò Ñ¥,ÖØn„Yªbhlˇ(=':©ÇŸo»¢◊ìò¥ÔÄÂπê (¿"
+2024/08/03 05:50:52 [warn] 2103#2103: *11 using uninitialized "year" variable while logging request, client: 205.210.31.5, server: , request: "    ∆öÛÑØéó’¶O∂¥yç®©–WNÒjbLc@SJ†Ö  hÃÃ¿/¿+¿0¿,¿¿¿'¿#¿¿	¿(¿$¿¿"
+2024/08/03 05:50:52 [warn] 2103#2103: *11 using uninitialized "month" variable while logging request, client: 205.210.31.5, server: , request: "    ∆öÛÑØéó’¶O∂¥yç®©–WNÒjbLc@SJ†Ö  hÃÃ¿/¿+¿0¿,¿¿¿'¿#¿¿	¿(¿$¿¿"
+2024/08/03 05:50:52 [warn] 2103#2103: *11 using uninitialized "day" variable while logging request, client: 205.210.31.5, server: , request: "    ∆öÛÑØéó’¶O∂¥yç®©–WNÒjbLc@SJ†Ö  hÃÃ¿/¿+¿0¿,¿¿¿'¿#¿¿	¿(¿$¿¿"
+2024/08/03 05:50:52 [warn] 2103#2103: *11 using uninitialized "hour" variable while logging request, client: 205.210.31.5, server: , request: "    ∆öÛÑØéó’¶O∂¥yç®©–WNÒjbLc@SJ†Ö  hÃÃ¿/¿+¿0¿,¿¿¿'¿#¿¿	¿(¿$¿¿"
+2024/08/03 05:50:52 [warn] 2103#2103: *10 using uninitialized "year" variable while logging request, client: 205.210.31.5, server: , request: " Ó  Í!Ôêiª◊GOÎ¿›≤Sa)u√√%æ˛#ÙÕYù◊”…  ˛œèb{UMq€W"
+2024/08/03 05:50:52 [warn] 2103#2103: *10 using uninitialized "month" variable while logging request, client: 205.210.31.5, server: , request: " Ó  Í!Ôêiª◊GOÎ¿›≤Sa)u√√%æ˛#ÙÕYù◊”…  ˛œèb{UMq€W"
+2024/08/03 05:50:52 [warn] 2103#2103: *10 using uninitialized "day" variable while logging request, client: 205.210.31.5, server: , request: " Ó  Í!Ôêiª◊GOÎ¿›≤Sa)u√√%æ˛#ÙÕYù◊”…  ˛œèb{UMq€W"
+2024/08/03 05:50:52 [warn] 2103#2103: *10 using uninitialized "hour" variable while logging request, client: 205.210.31.5, server: , request: " Ó  Í!Ôêiª◊GOÎ¿›≤Sa)u√√%æ˛#ÙÕYù◊”…  ˛œèb{UMq€W"
+2024/08/03 06:29:49 [warn] 6681#6681: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2024/08/03 06:29:50 [warn] 6716#6716: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2024/08/03 06:29:50 [warn] 6717#6717: could not build optimal types_hash, you should increase either types_hash_max_size: 1024 or types_hash_bucket_size: 64; ignoring types_hash_bucket_size
+2024/08/03 06:30:33 [error] 6719#6719: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 14.102.93.212, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "dashxpert-env.eba-rhsbvkzw.eu-north-1.elasticbeanstalk.com"
+2024/08/03 06:30:33 [error] 6719#6719: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 14.102.93.212, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:8000/favicon.ico", host: "dashxpert-env.eba-rhsbvkzw.eu-north-1.elasticbeanstalk.com", referrer: "http://dashxpert-env.eba-rhsbvkzw.eu-north-1.elasticbeanstalk.com/"
+2024/08/03 06:32:49 [error] 6719#6719: *5 connect() failed (111: Connection refused) while connecting to upstream, client: 14.102.93.212, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "dashxpert-env.eba-rhsbvkzw.eu-north-1.elasticbeanstalk.com"
+2024/08/03 06:32:49 [error] 6719#6719: *5 connect() failed (111: Connection refused) while connecting to upstream, client: 14.102.93.212, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:8000/favicon.ico", host: "dashxpert-env.eba-rhsbvkzw.eu-north-1.elasticbeanstalk.com", referrer: "http://dashxpert-env.eba-rhsbvkzw.eu-north-1.elasticbeanstalk.com/"
+2024/08/03 07:29:38 [error] 6719#6719: *15 connect() failed (111: Connection refused) while connecting to upstream, client: 14.102.93.212, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "dashxpert-env.eba-rhsbvkzw.eu-north-1.elasticbeanstalk.com"
+2024/08/03 07:29:38 [error] 6719#6719: *15 connect() failed (111: Connection refused) while connecting to upstream, client: 14.102.93.212, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:8000/favicon.ico", host: "dashxpert-env.eba-rhsbvkzw.eu-north-1.elasticbeanstalk.com", referrer: "http://dashxpert-env.eba-rhsbvkzw.eu-north-1.elasticbeanstalk.com/"
+2024/08/03 07:56:53 [error] 6719#6719: *20 connect() failed (111: Connection refused) while connecting to upstream, client: 87.236.176.81, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "51.20.216.149"
+2024/08/03 08:22:51 [error] 6719#6719: *22 connect() failed (111: Connection refused) while connecting to upstream, client: 64.62.197.119, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "51.20.216.149"
+2024/08/03 08:24:03 [error] 6719#6719: *24 connect() failed (111: Connection refused) while connecting to upstream, client: 64.62.197.107, server: , request: "GET /webui/ HTTP/1.1", upstream: "http://127.0.0.1:8000/webui/", host: "51.20.216.149"
+2024/08/03 08:24:57 [error] 6719#6719: *26 connect() failed (111: Connection refused) while connecting to upstream, client: 64.62.197.111, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:8000/favicon.ico", host: "51.20.216.149"
+2024/08/03 08:45:33 [error] 6719#6719: *28 connect() failed (111: Connection refused) while connecting to upstream, client: 185.254.196.173, server: , request: "GET /.env HTTP/1.1", upstream: "http://127.0.0.1:8000/.env", host: "51.20.216.149"
+2024/08/03 08:45:34 [error] 6720#6720: *30 connect() failed (111: Connection refused) while connecting to upstream, client: 185.254.196.173, server: , request: "POST / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "51.20.216.149"
+2024/08/03 09:08:38 [error] 6720#6720: *32 connect() failed (111: Connection refused) while connecting to upstream, client: 80.82.77.202, server: , request: "GET / HTTP/1.0", upstream: "http://127.0.0.1:8000/"
+2024/08/03 09:35:37 [warn] 6720#6720: *35 using uninitialized "year" variable while logging request, client: 209.97.181.114, server: , request: " {  w‰ÂÔ/~bw	öˆüÀ ΩHåkö˘§zòB_ í"
+2024/08/03 09:35:37 [warn] 6720#6720: *35 using uninitialized "month" variable while logging request, client: 209.97.181.114, server: , request: " {  w‰ÂÔ/~bw	öˆüÀ ΩHåkö˘§zòB_ í"
+2024/08/03 09:35:37 [warn] 6720#6720: *35 using uninitialized "day" variable while logging request, client: 209.97.181.114, server: , request: " {  w‰ÂÔ/~bw	öˆüÀ ΩHåkö˘§zòB_ í"
+2024/08/03 09:35:37 [warn] 6720#6720: *35 using uninitialized "hour" variable while logging request, client: 209.97.181.114, server: , request: " {  w‰ÂÔ/~bw	öˆüÀ ΩHåkö˘§zòB_ í"
+2024/08/03 09:35:37 [warn] 6720#6720: *34 using uninitialized "year" variable while logging request, client: 209.97.181.114, server: , request: " {  wfV®˚¶∑„X2»ÿ¡˝≠§œ‹™@‹≈ZK¿(  ¿/¿+¿¿¿¿	¿¿"
+2024/08/03 09:35:37 [warn] 6720#6720: *34 using uninitialized "month" variable while logging request, client: 209.97.181.114, server: , request: " {  wfV®˚¶∑„X2»ÿ¡˝≠§œ‹™@‹≈ZK¿(  ¿/¿+¿¿¿¿	¿¿"
+2024/08/03 09:35:37 [warn] 6720#6720: *34 using uninitialized "day" variable while logging request, client: 209.97.181.114, server: , request: " {  wfV®˚¶∑„X2»ÿ¡˝≠§œ‹™@‹≈ZK¿(  ¿/¿+¿¿¿¿	¿¿"
+2024/08/03 09:35:37 [warn] 6720#6720: *34 using uninitialized "hour" variable while logging request, client: 209.97.181.114, server: , request: " {  wfV®˚¶∑„X2»ÿ¡˝≠§œ‹™@‹≈ZK¿(  ¿/¿+¿¿¿¿	¿¿"
+2024/08/03 09:35:37 [error] 6720#6720: *36 connect() failed (111: Connection refused) while connecting to upstream, client: 209.97.181.114, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "51.20.216.149"
+2024/08/03 09:35:37 [error] 6720#6720: *38 connect() failed (111: Connection refused) while connecting to upstream, client: 209.97.181.114, server: , request: "GET /form.html HTTP/1.1", upstream: "http://127.0.0.1:8000/form.html", host: "51.20.216.149"
+2024/08/03 09:35:37 [error] 6720#6720: *40 connect() failed (111: Connection refused) while connecting to upstream, client: 209.97.181.114, server: , request: "GET /upl.php HTTP/1.1", upstream: "http://127.0.0.1:8000/upl.php", host: "51.20.216.149"
+2024/08/03 09:35:37 [error] 6720#6720: *42 connect() failed (111: Connection refused) while connecting to upstream, client: 209.97.181.114, server: , request: "GET /t4 HTTP/1.1", upstream: "http://127.0.0.1:8000/t4", host: "51.20.216.149"
+2024/08/03 09:35:37 [error] 6720#6720: *44 connect() failed (111: Connection refused) while connecting to upstream, client: 209.97.181.114, server: , request: "GET /geoip/ HTTP/1.1", upstream: "http://127.0.0.1:8000/geoip/", host: "51.20.216.149"
+2024/08/03 09:35:37 [error] 6720#6720: *46 connect() failed (111: Connection refused) while connecting to upstream, client: 209.97.181.114, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:8000/favicon.ico", host: "51.20.216.149"
+2024/08/03 09:35:37 [error] 6720#6720: *48 connect() failed (111: Connection refused) while connecting to upstream, client: 209.97.181.114, server: , request: "GET /1.php HTTP/1.1", upstream: "http://127.0.0.1:8000/1.php", host: "51.20.216.149"
+2024/08/03 09:35:37 [error] 6720#6720: *50 connect() failed (111: Connection refused) while connecting to upstream, client: 209.97.181.114, server: , request: "GET /systembc/password.php HTTP/1.1", upstream: "http://127.0.0.1:8000/systembc/password.php", host: "51.20.216.149"
+2024/08/03 09:35:37 [error] 6720#6720: *52 connect() failed (111: Connection refused) while connecting to upstream, client: 209.97.181.114, server: , request: "GET /password.php HTTP/1.1", upstream: "http://127.0.0.1:8000/password.php", host: "51.20.216.149"
+2024/08/03 09:47:32 [error] 6720#6720: *54 connect() failed (111: Connection refused) while connecting to upstream, client: 14.102.93.212, server: , request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:8000/", host: "dashxpert-env.eba-rhsbvkzw.eu-north-1.elasticbeanstalk.com"
+2024/08/03 09:47:33 [error] 6720#6720: *54 connect() failed (111: Connection refused) while connecting to upstream, client: 14.102.93.212, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:8000/favicon.ico", host: "dashxpert-env.eba-rhsbvkzw.eu-north-1.elasticbeanstalk.com", referrer: "http://dashxpert-env.eba-rhsbvkzw.eu-north-1.elasticbeanstalk.com/"
+
+
+----------------------------------------
+/tmp/sample-app.log
+----------------------------------------
+
+
+----------------------------------------
+/var/log/web.stdout.log
+----------------------------------------
+Aug  3 06:29:51 ip-172-31-36-244 web[6750]:          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Aug  3 06:29:51 ip-172-31-36-244 web[6750]:  File "/usr/lib64/python3.11/importlib/__init__.py", line 126, in import_module
+Aug  3 06:29:51 ip-172-31-36-244 web[6750]:    return _bootstrap._gcd_import(name[level:], package, level)
+Aug  3 06:29:51 ip-172-31-36-244 web[6750]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Aug  3 06:29:51 ip-172-31-36-244 web[6750]:  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+Aug  3 06:29:51 ip-172-31-36-244 web[6750]:  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+Aug  3 06:29:51 ip-172-31-36-244 web[6750]:  File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+Aug  3 06:29:51 ip-172-31-36-244 web[6750]:  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+Aug  3 06:29:51 ip-172-31-36-244 web[6750]:  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+Aug  3 06:29:51 ip-172-31-36-244 web[6750]:  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+Aug  3 06:29:51 ip-172-31-36-244 web[6750]:  File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+Aug  3 06:29:51 ip-172-31-36-244 web[6750]: ModuleNotFoundError: No module named 'dashboard_service'
+Aug  3 06:29:51 ip-172-31-36-244 web[6750]: [2024-08-03 06:29:51 +0000] [6750] [INFO] Worker exiting (pid: 6750)
+Aug  3 06:29:51 ip-172-31-36-244 web[6746]: [2024-08-03 06:29:51 +0000] [6746] [ERROR] Worker (pid:6750) exited with code 3
+Aug  3 06:29:51 ip-172-31-36-244 web[6746]: [2024-08-03 06:29:51 +0000] [6746] [ERROR] Shutting down: Master
+Aug  3 06:29:51 ip-172-31-36-244 web[6746]: [2024-08-03 06:29:51 +0000] [6746] [ERROR] Reason: Worker failed to boot.
+Aug  3 06:29:52 ip-172-31-36-244 web[6752]: [2024-08-03 06:29:52 +0000] [6752] [INFO] Starting gunicorn 22.0.0
+Aug  3 06:29:52 ip-172-31-36-244 web[6752]: [2024-08-03 06:29:52 +0000] [6752] [INFO] Listening at: http://127.0.0.1:8000 (6752)
+Aug  3 06:29:52 ip-172-31-36-244 web[6752]: [2024-08-03 06:29:52 +0000] [6752] [INFO] Using worker: gthread
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]: [2024-08-03 06:29:52 +0000] [6756] [INFO] Booting worker with pid: 6756
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]: [2024-08-03 06:29:52 +0000] [6756] [ERROR] Exception in worker process
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]: Traceback (most recent call last):
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.11/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:    worker.init_process()
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.11/site-packages/gunicorn/workers/gthread.py", line 95, in init_process
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:    super().init_process()
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.11/site-packages/gunicorn/workers/base.py", line 134, in init_process
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:    self.load_wsgi()
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.11/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:    self.wsgi = self.app.wsgi()
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:                ^^^^^^^^^^^^^^^
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.11/site-packages/gunicorn/app/base.py", line 67, in wsgi
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:    self.callable = self.load()
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:                    ^^^^^^^^^^^
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:    return self.load_wsgiapp()
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:           ^^^^^^^^^^^^^^^^^^^
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:    return util.import_app(self.app_uri)
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.11/site-packages/gunicorn/util.py", line 371, in import_app
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:    mod = importlib.import_module(module)
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:  File "/usr/lib64/python3.11/importlib/__init__.py", line 126, in import_module
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:    return _bootstrap._gcd_import(name[level:], package, level)
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:  File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]:  File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]: ModuleNotFoundError: No module named 'dashboard_service'
+Aug  3 06:29:52 ip-172-31-36-244 web[6756]: [2024-08-03 06:29:52 +0000] [6756] [INFO] Worker exiting (pid: 6756)
+Aug  3 06:29:52 ip-172-31-36-244 web[6752]: [2024-08-03 06:29:52 +0000] [6752] [ERROR] Worker (pid:6756) exited with code 3
+Aug  3 06:29:52 ip-172-31-36-244 web[6752]: [2024-08-03 06:29:52 +0000] [6752] [ERROR] Shutting down: Master
+Aug  3 06:29:52 ip-172-31-36-244 web[6752]: [2024-08-03 06:29:52 +0000] [6752] [ERROR] Reason: Worker failed to boot.
+Aug  3 06:29:52 ip-172-31-36-244 web[6758]: [2024-08-03 06:29:52 +0000] [6758] [INFO] Starting gunicorn 22.0.0
+Aug  3 06:29:52 ip-172-31-36-244 web[6758]: [2024-08-03 06:29:52 +0000] [6758] [INFO] Listening at: http://127.0.0.1:8000 (6758)
+Aug  3 06:29:52 ip-172-31-36-244 web[6758]: [2024-08-03 06:29:52 +0000] [6758] [INFO] Using worker: gthread
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]: [2024-08-03 06:29:52 +0000] [6762] [INFO] Booting worker with pid: 6762
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]: [2024-08-03 06:29:52 +0000] [6762] [ERROR] Exception in worker process
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]: Traceback (most recent call last):
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.11/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:    worker.init_process()
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.11/site-packages/gunicorn/workers/gthread.py", line 95, in init_process
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:    super().init_process()
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.11/site-packages/gunicorn/workers/base.py", line 134, in init_process
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:    self.load_wsgi()
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.11/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:    self.wsgi = self.app.wsgi()
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:                ^^^^^^^^^^^^^^^
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.11/site-packages/gunicorn/app/base.py", line 67, in wsgi
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:    self.callable = self.load()
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:                    ^^^^^^^^^^^
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:    return self.load_wsgiapp()
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:           ^^^^^^^^^^^^^^^^^^^
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:    return util.import_app(self.app_uri)
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:  File "/var/app/venv/staging-LQM1lest/lib64/python3.11/site-packages/gunicorn/util.py", line 371, in import_app
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:    mod = importlib.import_module(module)
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:  File "/usr/lib64/python3.11/importlib/__init__.py", line 126, in import_module
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:    return _bootstrap._gcd_import(name[level:], package, level)
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:  File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]:  File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]: ModuleNotFoundError: No module named 'dashboard_service'
+Aug  3 06:29:52 ip-172-31-36-244 web[6762]: [2024-08-03 06:29:52 +0000] [6762] [INFO] Worker exiting (pid: 6762)
+Aug  3 06:29:52 ip-172-31-36-244 web[6758]: [2024-08-03 06:29:52 +0000] [6758] [ERROR] Worker (pid:6762) exited with code 3
+Aug  3 06:29:52 ip-172-31-36-244 web[6758]: [2024-08-03 06:29:52 +0000] [6758] [ERROR] Shutting down: Master
+Aug  3 06:29:52 ip-172-31-36-244 web[6758]: [2024-08-03 06:29:52 +0000] [6758] [ERROR] Reason: Worker failed to boot.
+
+
+----------------------------------------
+/var/log/eb-engine.log
+----------------------------------------
+      Specify MYSQLCLIENT_CFLAGS and MYSQLCLIENT_LDFLAGS env vars manually
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: subprocess-exited-with-error
+
+√ó Getting requirements to build wheel did not run successfully.
+‚îÇ exit code: 1
+‚ï∞‚îÄ> See above for output.
+
+note: This error originates from a subprocess, and is likely not a problem with pip.
+
+[notice] A new release of pip available: 22.3.1 -> 24.2
+[notice] To update, run: python3.11 -m pip install --upgrade pip
+ 
+
+2024/08/03 09:28:45.411959 [INFO] Executing cleanup logic
+2024/08/03 09:28:45.412481 [INFO] CommandService Response: {"status":"FAILURE","api_version":"1.0","results":[{"status":"FAILURE","msg":"Engine execution has encountered an error.","returncode":1,"events":[{"msg":"Instance deployment failed to install application dependencies. The deployment failed.","timestamp":1722677325411,"severity":"ERROR"},{"msg":"Instance deployment failed. For details, see 'eb-engine.log'.","timestamp":1722677325411,"severity":"ERROR"}]}]}
+
+2024/08/03 09:28:45.412659 [INFO] Platform Engine finished execution on command: config-deploy
+
+2024/08/03 09:51:35.882656 [INFO] Starting...
+2024/08/03 09:51:35.882747 [INFO] Starting EBPlatform-PlatformEngine
+2024/08/03 09:51:35.882769 [INFO] reading event message file
+2024/08/03 09:51:35.882952 [INFO] Engine received EB command cfn-hup-exec
+
+2024/08/03 09:51:35.961853 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-north-1:017820696248:stack/awseb-e-dwzkfw4qnr-stack/284c7e70-5150-11ef-ace6-0ecf0fb11667 -r AWSEBAutoScalingGroup --region eu-north-1
+2024/08/03 09:51:36.370012 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-north-1:017820696248:stack/awseb-e-dwzkfw4qnr-stack/284c7e70-5150-11ef-ace6-0ecf0fb11667 -r AWSEBBeanstalkMetadata --region eu-north-1
+2024/08/03 09:51:36.812290 [INFO] checking whether command app-deploy is applicable to this instance...
+2024/08/03 09:51:36.812305 [INFO] this command is applicable to the instance, thus instance should execute command
+2024/08/03 09:51:36.812309 [INFO] Engine command: (app-deploy)
+
+2024/08/03 09:51:36.812313 [INFO] Downloading EB Application...
+2024/08/03 09:51:36.812323 [INFO] Region: eu-north-1
+2024/08/03 09:51:36.812327 [INFO] envID: e-dwzkfw4qnr
+2024/08/03 09:51:36.812330 [INFO] envBucket: elasticbeanstalk-eu-north-1-017820696248
+2024/08/03 09:51:36.812333 [INFO] Using manifest file name from command request
+2024/08/03 09:51:36.812341 [INFO] Manifest name is : manifest_1722678673296
+2024/08/03 09:51:36.812344 [INFO] Download app version manifest
+2024/08/03 09:51:36.812544 [INFO] Downloading: bucket: elasticbeanstalk-eu-north-1-017820696248, object: /resources/environments/e-dwzkfw4qnr/_runtime/versions/manifest_1722678673296
+2024/08/03 09:51:36.860525 [INFO] Download successful103bytes downloaded
+2024/08/03 09:51:36.860717 [INFO] Trying to read and parse version manifest...
+2024/08/03 09:51:36.863345 [INFO] Downloading: bucket: elasticbeanstalk-eu-north-1-017820696248, object: /resources/environments/e-dwzkfw4qnr/_runtime/_versions/dashxpert/app-240803_151136387213
+2024/08/03 09:51:37.940746 [INFO] Download successful335491764bytes downloaded
+2024/08/03 09:51:37.944672 [INFO] Executing instruction: ElectLeader
+2024/08/03 09:51:37.944680 [INFO] Running leader election for instance i-09260d8d2ab40cb83...
+2024/08/03 09:51:37.944684 [INFO] Calling the cfn-elect-cmd-leader to elect the command leader.
+2024/08/03 09:51:37.944695 [INFO] Running command: /opt/aws/bin/cfn-elect-cmd-leader --stack arn:aws:cloudformation:eu-north-1:017820696248:stack/awseb-e-dwzkfw4qnr-stack/284c7e70-5150-11ef-ace6-0ecf0fb11667 --command-name ElasticBeanstalkCommand-AWSEBAutoScalingGroup --invocation-id 2a60a397-4f38-4772-b6e4-27254688c373 --listener-id i-09260d8d2ab40cb83 --region eu-north-1
+2024/08/03 09:51:38.370296 [INFO] Instance is Leader.
+2024/08/03 09:51:38.370343 [INFO] Executing instruction: stopSqsd
+2024/08/03 09:51:38.370347 [INFO] This is a web server environment instance, skip stop sqsd daemon ...
+2024/08/03 09:51:38.370350 [INFO] Executing instruction: PreBuildEbExtension
+2024/08/03 09:51:38.370352 [INFO] Starting executing the config set Infra-EmbeddedPreBuild.
+2024/08/03 09:51:38.370370 [INFO] Running command: /opt/aws/bin/cfn-init -s arn:aws:cloudformation:eu-north-1:017820696248:stack/awseb-e-dwzkfw4qnr-stack/284c7e70-5150-11ef-ace6-0ecf0fb11667 -r AWSEBAutoScalingGroup --region eu-north-1 --configsets Infra-EmbeddedPreBuild
+2024/08/03 09:51:42.477534 [INFO] Error occurred during build: Yum does not have mysql-devel available for installation
+
+2024/08/03 09:51:42.477974 [ERROR] An error occurred during execution of command [app-deploy] - [PreBuildEbExtension]. Stop running the command. Error: EbExtension build failed. Please refer to /var/log/cfn-init.log for more details. 
+
+2024/08/03 09:51:42.477982 [INFO] Executing cleanup logic
+2024/08/03 09:51:42.479588 [INFO] CommandService Response: {"status":"FAILURE","api_version":"1.0","results":[{"status":"FAILURE","msg":"Engine execution has encountered an error.","returncode":1,"events":[{"msg":"Instance deployment failed. For details, see 'eb-engine.log'.","timestamp":1722678702477,"severity":"ERROR"}]}]}
+
+2024/08/03 09:51:42.479743 [INFO] Platform Engine finished execution on command: app-deploy
+
+2024/08/03 09:53:30.599355 [INFO] Starting...
+2024/08/03 09:53:30.599402 [INFO] Starting EBPlatform-PlatformEngine
+2024/08/03 09:53:30.599427 [INFO] reading event message file
+2024/08/03 09:53:30.600107 [INFO] Engine received EB command cfn-hup-exec
+
+2024/08/03 09:53:30.688792 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-north-1:017820696248:stack/awseb-e-dwzkfw4qnr-stack/284c7e70-5150-11ef-ace6-0ecf0fb11667 -r AWSEBAutoScalingGroup --region eu-north-1
+2024/08/03 09:53:31.056893 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-north-1:017820696248:stack/awseb-e-dwzkfw4qnr-stack/284c7e70-5150-11ef-ace6-0ecf0fb11667 -r AWSEBBeanstalkMetadata --region eu-north-1
+2024/08/03 09:53:31.394289 [INFO] checking whether command bundle-log is applicable to this instance...
+2024/08/03 09:53:31.394302 [INFO] this command is applicable to the instance, thus instance should execute command
+2024/08/03 09:53:31.394305 [INFO] Engine command: (bundle-log)
+
+2024/08/03 09:53:31.394355 [INFO] Executing instruction: GetBundleLogs
+2024/08/03 09:53:31.394358 [INFO] Bundle Logs...
+2024/08/03 09:53:31.575644 [INFO] Executing cleanup logic
+2024/08/03 09:53:31.575783 [INFO] CommandService Response: {"status":"SUCCESS","api_version":"1.0","results":[{"status":"SUCCESS","msg":"Engine execution has succeeded.","returncode":0,"events":[{"msg":"Instance deployment completed successfully.","timestamp":1722678811575,"severity":"INFO"}]}]}
+
+2024/08/03 09:53:31.575799 [INFO] Platform Engine finished execution on command: bundle-log
+
+2024/08/03 09:53:37.863187 [INFO] Starting...
+2024/08/03 09:53:37.863231 [INFO] Starting EBPlatform-PlatformEngine
+2024/08/03 09:53:37.863257 [INFO] reading event message file
+2024/08/03 09:53:37.863453 [INFO] Engine received EB command cfn-hup-exec
+
+2024/08/03 09:53:37.940039 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-north-1:017820696248:stack/awseb-e-dwzkfw4qnr-stack/284c7e70-5150-11ef-ace6-0ecf0fb11667 -r AWSEBAutoScalingGroup --region eu-north-1
+2024/08/03 09:53:38.307036 [INFO] Running command: /opt/aws/bin/cfn-get-metadata -s arn:aws:cloudformation:eu-north-1:017820696248:stack/awseb-e-dwzkfw4qnr-stack/284c7e70-5150-11ef-ace6-0ecf0fb11667 -r AWSEBBeanstalkMetadata --region eu-north-1
+2024/08/03 09:53:38.628011 [INFO] checking whether command tail-log is applicable to this instance...
+2024/08/03 09:53:38.628026 [INFO] this command is applicable to the instance, thus instance should execute command
+2024/08/03 09:53:38.628029 [INFO] Engine command: (tail-log)
+
+2024/08/03 09:53:38.628073 [INFO] Executing instruction: GetTailLogs
+2024/08/03 09:53:38.628076 [INFO] Tail Logs...
+2024/08/03 09:53:38.629668 [INFO] Running command: tail -n 100 /var/log/eb-hooks.log
+2024/08/03 09:53:38.631735 [INFO] Running command: tail -n 100 /var/log/nginx/access.log
+2024/08/03 09:53:38.633432 [INFO] Running command: tail -n 100 /var/log/nginx/error.log
+2024/08/03 09:53:38.635014 [INFO] Running command: tail -n 100 /tmp/sample-app.log
+2024/08/03 09:53:38.636678 [INFO] Running command: tail -n 100 /var/log/web.stdout.log
+2024/08/03 09:53:38.638326 [INFO] Running command: tail -n 100 /var/log/eb-engine.log
+
+

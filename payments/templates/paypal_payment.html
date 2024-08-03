@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center">Pay with PayPal</h1>
+    <div id="paypal-button-container"></div>
+</div>
+
+<script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID"></script>
+<script>
+    paypal.Buttons({
+        createOrder: function(data, actions) {
+            return actions.order.create({
+                purchase_units: [{
+                    amount: {
+                        value: '10.00'
+                    }
+                }]
+            });
+        },
+        onApprove: function(data, actions) {
+            return actions.order.capture().then(function(details) {
+                // Submit form to save payment details
+                fetch("{% url 'paypal_payment' %}", {
+                    method: 'POST',
+                    headers: {
+                        'X-CSRFToken': '{{ csrf_token }}',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        transaction_id: details.id,
+                        amount: details.purchase_units[0].amount.value,
+                        status: 'Completed'
+                    })
+                }).then(response => response.json())
+                  .then(data => {
+                      // Redirect to a success page
+                      window.location.href = <a href="{% url 'payment_success' %}">Payment Success</a>
+                  });
+            });
+        }
+    }).render('#paypal-button-container');
+</script>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pivot Table Results</title>
+</head>
+<body>
+    <h1>Pivot Table Results</h1>
+    <div>
+        <!-- Display the pivot table HTML -->
+        {{ pivot_table|safe }}
+    </div>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" name="download_csv">Download CSV</button>
+    </form>
+</body>
+</html>
+
+{% endblock content %}

@@ -1,0 +1,92 @@
+<!-- templates/users/register.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+  /* Container for the registration form */
+  .registration-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Title styling */
+  .register-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #023047; /* Header color from your preferences */
+  }
+
+  /* Form styling */
+  .register-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .register-form input,
+  .register-form select,
+  .register-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .register-form .alert {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  /* Button styling */
+  .register-button {
+    padding: 10px 20px;
+    background-color: #023047; /* Button background color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .register-button:hover {
+    background-color: #021c39; /* Darker shade on hover */
+  }
+
+  /* Info message styling */
+  .info-message {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+  }
+
+  .info-message h1 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+  }
+</style>
+
+<div class="registration-container">
+  <h2 class="register-title">Register</h2>
+  
+  <form method="post" class="register-form">
+    {% csrf_token %}
+    {{ form.as_p }}
+    {% if form.non_field_errors %}
+      <div class="alert alert-danger">
+        {{ form.non_field_errors }}
+      </div>
+    {% endif %}
+    <button type="submit" class="register-button">Register</button>
+  </form>
+  
+  <div class="info-message">
+    <h1>If you get the message like this: "A user with this email already exists". It means you are registered, you can login.</h1>
+  </div>
+</div>
+{% endblock %}

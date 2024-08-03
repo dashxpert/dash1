@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Join Successful</h2>
+<p>The datasets have been successfully joined.</p>
+<a href="{% url 'download_joined_csv' %}" class="btn btn-primary">Download Joined CSV</a>
+{% endblock %}

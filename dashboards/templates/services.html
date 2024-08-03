@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/services.css' %}">
+    <style>
+        body {
+            background-color: #2c3e50; /* Dark background for high contrast */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #ecf0f1; /* Light text color for contrast */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #ffffff; /* White color for header */
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        .services-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .service {
+            background-color: #34495e; /* Slightly lighter background for services */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        .service h2 {
+            color: #ffffff; /* White color for headings */
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        .service p {
+            font-size: 1em;
+            color: #bdc3c7; /* Light grey color for text */
+            line-height: 1.6;
+        }
+        .service a {
+            text-decoration: none;
+            color: #ffffff; /* White color for links */
+            background-color: #3498db; /* Blue background for buttons */
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+        .service a:hover {
+            background-color: #2980b9; /* Darker blue for hover effect */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Our Services</h1>
+        <div class="services-grid">
+            <a href="{% url 'upload-dashboard' %}">
+                <div class="service">
+                    <h2>Automatic Dashboard Creation</h2>
+                    <p>Create dynamic dashboards from your data files, offering various visualizations and insights.</p>
+                    <a href="{% url 'upload-dashboard' %}">Learn More</a>
+                </div>
+            </a>
+            <a href="{% url 'upload' %}">
+                <div class="service">
+                    <h2>Automatic Chart Creation</h2>
+                    <p>Generate various types of charts by uploading your data and selecting the desired visualization.</p>
+                    <a href="{% url 'upload' %}">Learn More</a>
+                </div>
+            </a>
+            <a href="{% url 'profile' %}">
+                <div class="service">
+                    <h2>Data Profiling</h2>
+                    <p>Get a comprehensive profile of your dataset, including summaries and detailed statistics.</p>
+                    <a href="{% url 'profile' %}">Learn More</a>
+                </div>
+            </a>
+
+
+            <a href="{% url 'upload_file' %}">
+                <div class="service">
+                    <h2>Data Cleaning</h2>
+                    <p>Clean your data and make use of it.</p>
+                    <a href="{% url 'upload_file' %}">Learn More</a>
+                </div>
+            </a>
+
+            <a href="{% url 'table_action' %}">
+                <div class="service">
+                    <h2>Join/Union between two tables</h2>
+                    <p>Join or append your data.</p>
+                    <a href="{% url 'table_action' %}">Learn More</a>
+                </div>
+            </a>
+
+
+            <a href="{% url 'upload_file1' %}">
+                <div class="service">
+                    <h2>pivot_table</h2>
+                    <p>pivot your data.</p>
+                    <a href="{% url 'upload_file1' %}">Learn More</a>
+                </div>
+            </a>
+
+
+     
+            
+
+            <a href="{% url 'webscraping' %}">
+                <div class="service">
+                    <h2>Web Scraping</h2>
+                    <p>Extract information from web pages by providing a URL, enabling further analysis and insights.</p>
+                    <a href="{% url 'webscraping' %}">Learn More</a>
+                </div>
+            </a>
+            <!-- Add more services here if needed -->
+        </div>
+    </div>
+</body>
+</html>
+{% endblock %}

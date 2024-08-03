@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Payment Required</h2>
+<p>You have used the service 5 times for free. Please make a payment to continue using the service.</p>
+<form method="post" action="{% url 'payment_page' %}">
+    {% csrf_token %}
+    <button type="submit">Proceed to Payment</button>
+</form>
+{% endblock %}

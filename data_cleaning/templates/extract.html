@@ -1,0 +1,22 @@
+<!-- templates/extract.html -->
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extract Substring</title>
+</head>
+<body>
+    <h1>Extract Substring</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
+{% endblock content %}

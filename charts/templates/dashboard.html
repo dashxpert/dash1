@@ -1,0 +1,10 @@
+<!-- templates/dashboards/dashboard.html -->
+
+
+{% block content %}
+<h1>Generated Dashboard</h1>
+<div>{{ chart|safe }}</div>
+<a href="{% url 'chart_options' %}">Select Another Chart</a><br><br>
+<a href="{% url 'upload' %}">Upload another file</a>
+
+{% endblock %}

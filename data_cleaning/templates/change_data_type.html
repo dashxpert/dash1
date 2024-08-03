@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container">
+      <h2 class="title">Change Data Type</h2>
+      
+      <form method="post" class="form">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <button type="submit" class="btn-submit">Change Data Type</button>
+      </form>
+
+      {% if form.errors %}
+        <div class="error">
+          <ul>
+            {% for field, errors in form.errors.items %}
+              {% for error in errors %}
+                <li>{{ error }}</li>
+              {% endfor %}
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+  </div>
+{% endblock %}
+
+{% block styles %}
+  <style>
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .title {
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .form {
+      display: flex;
+      flex-direction: column;
+    }
+    .form label {
+      margin-top: 10px;
+      color: #34495e;
+    }
+    .form input,
+    .form select,
+    .form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #bdc3c7;
+    }
+    .btn-submit {
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      margin-top: 20px;
+    }
+    .btn-submit:hover {
+      background-color: #2980b9;
+    }
+    .error {
+      color: red;
+      margin-top: 20px;
+    }
+    .error ul {
+      list-style-type: none;
+      padding: 0;
+    }
+  </style>
+{% endblock %}

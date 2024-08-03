@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .kpi-container, .desc-container, .quality-container, .summary-container {
+            display: flex;
+            margin: 2px auto;
+            justify-content: space-around;
+            center : center
+            margin-bottom: 20px;
+        }
+        .kpi, .desc, .quality, .summary {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .chart-container {
+            padding: 20px;
+        }
+
+        .charts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .chart {
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        form > div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        select {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            font-size: 16px;
+        }
+        
+        button[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            align-self: center;
+        }
+        
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Dashboard</h2>
+
+        <div class="summary-container">
+            <h3>Summary</h3>
+            <div class="summary">
+                <h3>Total Records</h3>
+                <p>{{ summary_stats.Total_Records }}</p>
+            </div>
+            <div class="summary">
+                <h3>Date Range</h3>
+                <p>{{ summary_stats.Date_Range }}</p>
+            </div>
+            <div class="summary">
+                <h3>Missing Values</h3>
+                <p>{{ summary_stats.Missing_Values }}</p>
+            </div>
+            <div class="summary">
+                <h3>Duplicates</h3>
+                <p>{{ summary_stats.Duplicates }}</p>
+            </div>
+        </div>
+
+
+        <form method="GET"> <h1> Please select your chart</h1>
+            <div>
+                <label for="column_1_x">Chart 1:</label>
+                <select name="column_1_x" id="column_1_x">
+                    {% for column in columns %}
+                    <option value="{{ column }}">{{ column }}</option>
+                    {% endfor %}
+                </select>
+                <select name="column_1_y" id="column_1_y">
+                    {% for column in columns %}
+                    <option value="{{ column }}">{{ column }}</option>
+                    {% endfor %}
+                </select>
+                <select name="chart_type_1" id="chart_type_1">
+                    <option value="bar">Bar</option>
+                    <option value="line">Line</option>
+                    <option value="scatter">Scatter</option>
+                </select>
+            </div>
+            <div>
+                <label for="column_2_x">Chart 2:</label>
+                <select name="column_2_x" id="column_2_x">
+                    {% for column in columns %}
+                    <option value="{{ column }}">{{ column }}</option>
+                    {% endfor %}
+                </select>
+                <select name="column_2_y" id="column_2_y">
+                    {% for column in columns %}
+                    <option value="{{ column }}">{{ column }}</option>
+                    {% endfor %}
+                </select>
+                <select name="chart_type_2" id="chart_type_2">
+                    <option value="bar">Bar</option>
+                    <option value="line">Line</option>
+                    <option value="scatter">Scatter</option>
+                </select>
+            </div>
+            <div>
+                <label for="column_3_x">Chart 3:</label>
+                <select name="column_3_x" id="column_3_x">
+                    {% for column in columns %}
+                    <option value="{{ column }}">{{ column }}</option>
+                    {% endfor %}
+                </select>
+                <select name="column_3_y" id="column_3_y">
+                    {% for column in columns %}
+                    <option value="{{ column }}">{{ column }}</option>
+                    {% endfor %}
+                </select>
+                <select name="chart_type_3" id="chart_type_3">
+                    <option value="bar">Bar</option>
+                    <option value="line">Line</option>
+                    <option value="scatter">Scatter</option>
+                </select>
+            </div>
+            <button type="submit">Generate Charts</button>
+        </form>
+    
+
+
+        <div class="kpi-container">
+            <h3>Key performance Indicator</h3>
+            
+            {% for kpi, values in kpis.items %}
+                <div class="kpi">
+                    <h3>{{ kpi }}</h3>
+                    {% for column, value in values.items %}
+                        <p>{{ column }}: {{ value }}</p>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="desc-container">
+            <h3>Descriptive Statistics</h3>
+            {% for stat, values in desc_stats.items %}
+                <div class="desc">
+                    <h4>{{ stat }}</h4>
+                    {% for column, value in values.items %}
+                        <p>{{ column }}: {{ value }}</p>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="quality-container">
+            <h3>Data Quality Indicators</h3>
+            <div class="quality">
+                <h4>Null Values in Columns</h4>
+                {% for column, value in data_quality.Missing_Values.items %}
+                    <p>{{ column }}: {{ value }}</p>
+                {% endfor %}
+            </div>
+            <div class="quality">
+                <h4>Columns Data Types</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Column</th>
+                            <th>Data Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for column, dtype in columns_data_types %}
+                        <tr>
+                            <td>{{ column }}</td>
+                            <td>{{ dtype }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <section class="charts">
+            {% for key, chart in charts.items %}
+            <div class="chart">
+                {{ chart|safe }}
+            </div>
+            {% endfor %}
+        </section>
+    
+</body>
+</html>

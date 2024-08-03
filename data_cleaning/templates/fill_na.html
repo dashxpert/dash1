@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div style="background-color: #f5f5f5; padding: 40px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); max-width: 500px; margin: 30px auto; color: #333;">
+      <h1 style="color: #2c3e50; text-align: center;">Fill NA Values</h1>
+      <form method="post" style="display: flex; flex-direction: column; align-items: center;">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <button type="submit" style="background-color: #27ae60; color: #ffffff; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 1em; margin-top: 20px;">
+              Apply
+          </button>
+      </form>
+  </div>
+{% endblock %}

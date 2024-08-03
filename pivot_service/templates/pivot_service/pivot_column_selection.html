@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pivot Table Selection</title>
+</head>
+<body>
+    <h1>Pivot Table Selection</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Generate Pivot Table</button>
+    </form>
+
+    {% if pivot_table %}
+        <h2>Pivot Table</h2>
+        <div>
+            {{ pivot_table|safe }}
+        </div>
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit" name="download_csv">Download CSV</button>
+        </form>
+    {% endif %}
+</body>
+</html>
+
+{% endblock content %}

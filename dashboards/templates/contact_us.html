@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Contact Us</h1>
+    <div class="contact-details">
+        <h2>Office Address</h2>
+        <p>Robersganj, Sonbhadra</p>
+        <p>PIN: 231222</p>
+
+        <h2>Office Hours</h2>
+        <p>9:00 AM to 5:00 PM</p>
+        <p>Service Available: 24/7</p>
+
+        <h2>Contact Information</h2>
+        <p>Mobile: 9716410843</p>
+        <p>Email: <a href="mailto:dashxpert6@gmail.com">dashxpert6@gmail.com</a></p>
+    </div>
+</div>
+
+<style>
+    .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        width: 60%;
+        margin: 20px auto;
+        font-family: Arial, sans-serif;
+        color: #333;
+    }
+    .contact-details h2 {
+        color: #2c3e50;
+    }
+    .contact-details p {
+        font-size: 1.1em;
+        margin: 10px 0;
+    }
+    .contact-details a {
+        color: #3498db;
+        text-decoration: none;
+    }
+</style>
+{% endblock %}

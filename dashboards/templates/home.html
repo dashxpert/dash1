@@ -1,0 +1,563 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}DashXpert{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body> 
+
+
+<!-- Welcome Section -->
+<section id="welcome" class="welcome-section py-5">
+    <div class="container text-center">
+        <div class="welcome-content p-4 bg-dark rounded shadow-lg">
+            <h1 class="display-4 font-weight-bold text-light mb-3">Welcome to DashXpert!</h1>
+            <p class="lead text-light">To access our exclusive DashXpert services, please register yourself.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CSS (Add to your style.css) -->
+<style>
+    .welcome-section {
+        background-color: #023047; /* Dark blue background for the section */
+    }
+
+    .welcome-content {
+        background-color: #0b3d91; /* Slightly lighter dark blue for the content */
+        border: 1px solid #f1f1f1; /* Light border for contrast */
+    }
+
+    .text-light {
+        color: #f1f1f1; /* Light text color for better visibility */
+    }
+</style>
+
+
+
+<!-- Introduction Section -->
+<section id="home" class="welcome-hero py-5">
+    <div class="container text-center">
+        <div class="welcome-hero-txt mb-4">
+            <h2 class="display-4 text-light font-weight-bold">Upload Your File</h2>
+            <p class="lead text-light">Upload your file to create an automated dashboard.</p>
+        </div>
+        <div class="welcome-hero-form-container">
+            <div class="welcome-hero-form bg-dark p-4 rounded shadow-lg mx-auto">
+                <form method="post" enctype="multipart/form-data" action="{% url 'upload-dashboard' %}">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="btn btn-accent mt-3">Upload</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CSS (Add to your style.css) -->
+<style>
+    .welcome-hero {
+        background-color: #1c1c1c; /* Dark background for high contrast */
+        color: #ecf0f1; /* Light text color for contrast */
+        padding: 60px 0;
+    }
+
+    .welcome-hero-txt h2 {
+        color: #ffffff; /* White color for main heading */
+    }
+
+    .welcome-hero-txt p {
+        color: #bdc3c7; /* Light grey for subheading */
+    }
+
+    .welcome-hero-form-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .welcome-hero-form {
+        background-color: #2c3e50; /* Slightly lighter dark background for the form container */
+        border: 1px solid #34495e; /* Light border for form container */
+        border-radius: 8px;
+        padding: 20px;
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .btn-accent {
+        background-color: #3498db; /* Blue background for buttons */
+        color: #ffffff; /* White text color for buttons */
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .btn-accent:hover {
+        background-color: #2980b9; /* Darker blue for hover effect */
+    }
+</style>
+
+
+
+
+
+<!-- Services Section -->
+<section id="list-topics" class="list-topics py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-4 font-weight-bold text-light">Our Services</h2>
+            <p class="lead text-light">Explore our range of services designed to streamline your data management and visualization needs.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="{% static 'images/anomaly.png' %}" alt="Automatic Dashboard Creation" class="service-icon mb-3">
+                <h3 class="h5 font-weight-bold text-light"><a href="{% url 'upload-dashboard' %}" class="text-decoration-none text-light">Automatic Dashboard Creation</a></h3>
+                <p class="text-light">Automate your dashboard creation process with ease.</p>
+            </div>
+            <div class="service-card">
+                <img src="{% static 'images/dashboard.png' %}" alt="Automatic Chart Creation" class="service-icon mb-3">
+                <h3 class="h5 font-weight-bold text-light"><a href="{% url 'upload' %}" class="text-decoration-none text-light">Automatic Chart Creation</a></h3>
+                <p class="text-light">Automate your chart creation process effortlessly.</p>
+            </div>
+            <div class="service-card">
+                <img src="{% static 'images/profile.png' %}" alt="Check Data Profile" class="service-icon mb-3">
+                <h3 class="h5 font-weight-bold text-light"><a href="{% url 'profile' %}" class="text-decoration-none text-light">Check Data Profile</a></h3>
+                <p class="text-light">Profile your data to uncover valuable insights.</p>
+            </div>
+            <div class="service-card">
+                <img src="{% static 'images/data_clean.png' %}" alt="Clean Your Data" class="service-icon mb-3">
+                <h3 class="h5 font-weight-bold text-light"><a href="{% url 'upload_file' %}" class="text-decoration-none text-light">Clean Your Data</a></h3>
+                <p class="text-light">Clean your data in just one click with our easy-to-use tools.</p>
+            </div>
+
+
+            <div class="service-card">
+                <img src="{% static 'images/data_clean.png' %}" alt="Clean Your Data" class="service-icon mb-3">
+                <h3 class="h5 font-weight-bold text-light"><a href="{% url 'table_action' %}" class="text-decoration-none text-light">Join or Union the Data</a></h3>
+                <p class="text-light">Join or Union the Data with our easy-to-use tools.</p>
+            </div>            
+
+
+            <div class="service-card">
+                <img src="{% static 'images/data_clean.png' %}" alt="Clean Your Data" class="service-icon mb-3">
+                <h3 class="h5 font-weight-bold text-light"><a href="{% url 'upload_file1' %}" class="text-decoration-none text-light">pivot your data</a></h3>
+                <p class="text-light">pivot your data with our easy-to-use tools.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="{% static 'images/webscraping.png' %}" alt="Web Scraping Service" class="service-icon mb-3">
+                <h3 class="h5 font-weight-bold text-light"><a href="{% url 'webscraping' %}" class="text-decoration-none text-light">Web Scraping Service</a></h3>
+                <p class="text-light">Extract and utilize web data with our efficient scraping service.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CSS (Add to your style.css) -->
+<style>
+    .list-topics {
+        background-color: #2c3e50; /* Dark background for the section */
+        padding: 60px 0;
+    }
+
+    .text-light {
+        color: #ecf0f1; /* Light text color for contrast */
+    }
+
+    .services-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .service-card {
+        background-color: #34495e; /* Slightly lighter dark background for cards */
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        max-width: 300px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        color: #ecf0f1;
+    }
+
+    .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .service-icon {
+        max-width: 80px;
+        height: auto;
+    }
+
+    .text-light a {
+        text-decoration: none;
+        color: #3498db; /* Blue color for links */
+        transition: color 0.3s;
+    }
+
+    .text-light a:hover {
+        color: #2980b9; /* Darker blue for hover effect */
+    }
+</style>
+
+
+
+
+<!-- Reviews Section -->
+<section id="reviews" class="reviews">
+<div class="container">
+    <div class="section-header">
+        <h2>clients reviews</h2>
+        <p>What our clients say about us</p>
+    </div><!--/.section-header-->
+    <div class="reviews-content">
+        <div class="testimonial-carousel">
+            <div class="single-testimonial-box">
+                <div class="testimonial-description">
+                    <div class="testimonial-info">
+                        <div class="testimonial-img">
+                            <img src="static/images/clients/c1.png" alt="client">
+                        </div><!--/.testimonial-img-->
+                        <div class="testimonial-person">
+                            <h2>Tom Leakar</h2>
+                            <h4>London, UK</h4>
+                            <div class="testimonial-person-star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div><!--/.testimonial-person-->
+                    </div><!--/.testimonial-info-->
+                    <div class="testimonial-comment">
+                        <p>
+                            I recently used the Automated Dashboard Creation Service, and I am beyond impressed. The ease with which I could upload my data and get a fully functional, dynamic dashboard was nothing short of revolutionary. The user interface is intuitive, and the processing speed is phenomenal. The visualization options are robust and customizable, allowing me to tailor the dashboards exactly to my needs. This service has saved me countless hours and provided insights that would have taken days to compile manually. Highly recommend it to anyone needing quick and efficient data analysis!.
+                        </p>
+                    </div><!--/.testimonial-comment-->
+                </div><!--/.testimonial-description-->
+            </div><!--/.single-testimonial-box-->
+            <div class="single-testimonial-box">
+                <div class="testimonial-description">
+                    <div class="testimonial-info">
+                        <div class="testimonial-img">
+                            <img src="static/images/clients/c2.png" alt="client">
+                        </div><!--/.testimonial-img-->
+                        <div class="testimonial-person">
+                            <h2>Monirul Islam</h2>
+                            <h4>Gurgaon, India</h4>
+                            <div class="testimonial-person-star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div><!--/.testimonial-person-->
+                    </div><!--/.testimonial-info-->
+                    <div class="testimonial-comment">
+                        <p>
+                            As a data analyst, I constantly seek tools to streamline my workflow and enhance productivity. The Automated Dashboard Creation Service is a game-changer. Its ability to quickly generate insightful dashboards from raw data is unparalleled. The platform is incredibly user-friendly, and the customer support is top-notch, always ready to assist with any queries. The dashboards are visually appealing and packed with meaningful insights that help drive data-driven decisions. This service is an indispensable tool for anyone in the data analysis field.
+                        </p>
+                    </div><!--/.testimonial-comment-->
+                </div><!--/.testimonial-description-->
+            </div><!--/.single-testimonial-box-->
+            <div class="single-testimonial-box">
+                <div class="testimonial-description">
+                    <div class="testimonial-info">
+                        <div class="testimonial-img">
+                            <img src="static/images/clients/c3.png" alt="client">
+                        </div><!--/.testimonial-img-->
+                        <div class="testimonial-person">
+                            <h2>Jane Smith</h2>
+                            <h4>New York, USA</h4>
+                            <div class="testimonial-person-star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div><!--/.testimonial-person-->
+                    </div><!--/.testimonial-info-->
+                    <div class="testimonial-comment">
+                        <p>
+                            The Automated Dashboard Creation Service has exceeded my expectations. From the moment I uploaded my file, the process was seamless and efficient. The resulting dashboards were not only aesthetically pleasing but also highly informative. The range of visualization options provided allowed me to present my data in the most impactful way. The service's ability to handle large datasets without any performance issues is commendable. This tool has significantly enhanced my reporting capabilities and is a must-have for anyone looking to automate their data visualization process.
+                        </p>
+                    </div><!--/.testimonial-comment-->
+                </div><!--/.testimonial-description-->
+            </div><!--/.single-testimonial-box-->
+            <div class="single-testimonial-box">
+                <div class="testimonial-description">
+                    <div class="testimonial-info">
+                        <div class="testimonial-img">
+                            <img src="static/images/clients/c4.png" alt="client">
+                        </div><!--/.testimonial-img-->
+                        <div class="testimonial-person">
+                            <h2>Emily Zhang</h2>
+                            <h4>Shanghai, China</h4>
+                            <div class="testimonial-person-star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div><!--/.testimonial-person-->
+                    </div><!--/.testimonial-info-->
+                    <div class="testimonial-comment">
+                        <p>
+                            This service is fantastic! The Automated Dashboard Creation Service made it so easy for me to turn complex data into clear, insightful dashboards. The speed and accuracy of the service are remarkable. I particularly appreciate the variety of visualization options available, which helped me present my data in the most effective way possible. The customer support team is also very responsive and helpful. Highly recommended!
+                        </p>
+                    </div><!--/.testimonial-comment-->
+                </div><!--/.testimonial-description-->
+            </div><!--/.single-testimonial-box-->
+            <div class="single-testimonial-box">
+                <div class="testimonial-description">
+                    <div class="testimonial-info">
+                        <div class="testimonial-img">
+                            <img src="static/images/clients/c5.png" alt="client">
+                        </div><!--/.testimonial-img-->
+                        <div class="testimonial-person">
+                            <h2>David Garcia</h2>
+                            <h4>Madrid, Spain</h4>
+                            <div class="testimonial-person-star">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div><!--/.testimonial-person-->
+                    </div><!--/.testimonial-info-->
+                    <div class="testimonial-comment">
+                        <p>
+                            I am extremely satisfied with the Automated Dashboard Creation Service. It has made my data analysis work so much easier and faster. The user interface is very user-friendly, and the dashboards it creates are both beautiful and informative. The ability to handle large datasets without any lag is a huge plus. This service has definitely improved my productivity and the quality of my reports. I would highly recommend it to anyone in need of efficient data visualization tools.
+                        </p>
+                    </div><!--/.testimonial-comment-->
+                </div><!--/.testimonial-description-->
+            </div><!--/.single-testimonial-box-->
+        </div><!--/.testimonial-carousel-->
+    </div><!--/.reviews-content-->
+</div><!--/.container-->
+</section><!--/.reviews-->
+<!-- Reviews Section End -->
+
+
+
+
+<!-- Statistics Section -->
+<section id="statistics" class="statistics">
+<div class="container">
+    <div class="statistics-counter">
+        <div class="col-md-3 col-sm-6">
+            <div class="single-statistics-box">
+                <div class="statistics-content">
+                    <div class="counter">90 </div> <span>K+</span>
+                </div><!--/.statistics-content-->
+                <h3>Dashboard creation</h3>
+            </div><!--/.single-statistics-box-->
+        </div><!--/.col-->
+        <div class="col-md-3 col-sm-6">
+            <div class="single-statistics-box">
+                <div class="statistics-content">
+                    <div class="counter">40</div> <span>k+</span>
+                </div><!--/.statistics-content-->
+                <h3>web scraping</h3>
+            </div><!--/.single-statistics-box-->
+        </div><!--/.col-->
+        <div class="col-md-3 col-sm-6">
+            <div class="single-statistics-box">
+                <div class="statistics-content">
+                    <div class="counter">65</div> <span>k+</span>
+                </div><!--/.statistics-content-->
+                <h3>visitors</h3>
+            </div><!--/.single-statistics-box-->
+        </div><!--/.col-->
+        <div class="col-md-3 col-sm-6">
+            <div class="single-statistics-box">
+                <div class="statistics-content">
+                    <div class="counter">50</div> <span>k+</span>
+                </div><!--/.statistics-content-->
+                <h3>happy clients</h3>
+            </div><!--/.single-statistics-box-->
+        </div><!--/.col-->
+    </div><!--/.statistics-counter-->    
+</div><!--/.container-->
+</section><!--/.statistics-->    
+<!-- Statistics Section End -->
+
+<!-- News and Articles Section -->
+<section id="blog" class="blog">
+<div class="container">
+    <div class="section-header">
+        <h2>News and Articles</h2>
+        <p>Always up to date with our latest News and Articles</p>
+    </div><!--/.section-header-->
+    <div class="blog-content">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="single-blog-item">
+                    <div class="single-blog-item-img">
+                        <img src="static/images/blog/b1.jpg" alt="blog image">
+                    </div>
+                    <div class="single-blog-item-txt">
+                        <h2><a href="#">How to Find Your Desired Place More Quickly</a></h2>
+                        <h4>Posted <span>by</span> <a href="#">admin</a> March 2018</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-blog-item">
+                    <div class="single-blog-item-img">
+                        <img src="static/images/blog/b2.jpg" alt="blog image">
+                    </div>
+                    <div class="single-blog-item-txt">
+                        <h2><a href="#">Tips for Finding the Best Places to Visit</a></h2>
+                        <h4>Posted <span>by</span> <a href="#">admin</a> April 2018</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="single-blog-item">
+                    <div class="single-blog-item-img">
+                        <img src="static/images/blog/b3.jpg" alt="blog image">
+                    </div>
+                    <div class="single-blog-item-txt">
+                        <h2><a href="#">Top Destinations for Your Next Vacation</a></h2>
+                        <h4>Posted <span>by</span> <a href="#">admin</a> May 2018</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--/.container-->
+</section><!--/.blog-->
+<!-- News and Articles Section End -->
+
+
+
+
+<!-- Subscription Section Start -->
+<section id="contact" class="subscription">
+    <div class="container">
+        <div class="subscribe-title text-center">
+            <h2>Get Insights from Your Data!</h2>
+            <p>Leverage our services and visualize your data clearly.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="subscription-input-group">
+                    <form action="#">
+                        <input type="email" class="subscription-input-form" placeholder="Enter your email here" required>
+                        <button type="submit" class="btn subscribe-btn">Subscribe</button>
+                    </form>
+                </div>
+                <div class="text-center mt-3">
+                    <p>Don't have an account? <a href="{% url 'register' %}" class="register-link">Register here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!--/subscription-->
+
+
+<style>
+    .subscription {
+        background-color: #023047;
+        color: white;
+        padding: 60px 0;
+    }
+    .subscribe-title h2 {
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+    .subscribe-title p {
+        font-size: 1.2em;
+    }
+    .subscription-input-group {
+        text-align: center;
+    }
+    .subscription-input-form {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        width: 80%;
+        max-width: 500px;
+        margin-right: 10px;
+    }
+    .subscribe-btn {
+        background-color: #ffc107;
+        border: none;
+        color: #333;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .subscribe-btn:hover {
+        background-color: #e0a800;
+    }
+    .register-link {
+        color: #ffc107;
+        text-decoration: none;
+    }
+    .register-link:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<!-- Subscription Section End -->
+
+
+
+<!-- Footer Start -->
+<footer id="footer" class="footer">
+<div class="containerr">
+    <div class="footer-menuu">
+        <div class="row">
+            <div class="col-sm-33">
+                <div class="navbar-headerr">
+                    <a class="navbar-brandd" href=" ">Dash<span>Xpert</span></a>
+                </div><!--/.navbar-header-->
+            </div>
+            <div class="col-sm-9">
+                <ul class="footer-menu-item">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'services' %}">Services</a></li>
+                    <li><a href="{% url 'pricing' %}">Pricing</a></li>
+                    <li><a href="{% url 'contact_us' %}">Contact Us</a></li>
+            
+
+</footer><!--/.footer-->
+<!-- Footer End -->
+
+
+
+{% endblock %}
+</body>
+</html>
+
+

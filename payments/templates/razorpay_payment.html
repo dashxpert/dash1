@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razorpay Payment</title>
+    {% load static %}
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <style>
+        body {
+            background-color: #2c3e50; /* Dark background for contrast */
+            color: #ecf0f1; /* Light text color */
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #34495e; /* Slightly lighter background for the container */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            text-align: center;
+            color: #ffffff; /* White color for header */
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db; /* Blue background for the button */
+            color: #ffffff; /* White text color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #2980b9; /* Darker blue for hover effect */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Complete Your Payment</h2>
+        <form id="razorpay-form">
+            <input type="hidden" id="razorpay-order-id" value="{{ payment.id }}">
+            <button type="button" class="btn" id="pay-button">Pay Rs 1</button>
+        </form>
+        <script>
+            document.getElementById('pay-button').onclick = function(e) {
+                var options = {
+                    "key": "{{ settings.RAZORPAY_KEY_ID }}", // Your Razorpay Key ID
+                    "amount": "100", // Amount in paise
+                    "currency": "INR",
+                    "name": "DashXpert",
+                    "description": "Payment for services",
+                    "order_id": document.getElementById('razorpay-order-id').value, // Order ID
+                    "handler": function (response){
+                        var form = document.createElement('form');
+                        form.method = 'POST';
+                        form.action = "{% url 'razorpay_payment' %}";
+
+                        var input1 = document.createElement('input');
+                        input1.type = 'hidden';
+                        input1.name = 'razorpay_payment_id';
+                        input1.value = response.razorpay_payment_id;
+                        form.appendChild(input1);
+
+                        var input2 = document.createElement('input');
+                        input2.type = 'hidden';
+                        input2.name = 'razorpay_order_id';
+                        input2.value = response.razorpay_order_id;
+                        form.appendChild(input2);
+
+                        var input3 = document.createElement('input');
+                        input3.type = 'hidden';
+                        input3.name = 'razorpay_signature';
+                        input3.value = response.razorpay_signature;
+                        form.appendChild(input3);
+
+                        document.body.appendChild(form);
+                        form.submit();
+                    },
+                    "prefill": {
+                        "name": "",
+                        "email": "",
+                        "contact": ""
+                    },
+                    "theme": {
+                        "color": "#3498db"
+                    }''
+                };
+                
+                var rzp1 = new Razorpay(options);
+                rzp1.open();
+            }
+        </script>
+    </div>
+</body>
+</html>
+{% endblock %}

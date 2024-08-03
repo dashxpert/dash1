@@ -1,0 +1,108 @@
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Profile</title>
+    <style>
+        body {
+            background-color: #2c3e50;
+            font-family: Arial, sans-serif;
+            color: #ecf0f1;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #ecf0f1;
+            color: #2c3e50;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            width: 100%;
+        }
+        h1, h2 {
+            color: #34495e;
+            text-align: center;
+        }
+        p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #bdc3c7;
+            color: #2c3e50;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .data-section {
+            margin-bottom: 30px;
+        }
+        .data-html {
+            background-color: #bdc3c7;
+            color: #2c3e50;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Profile</h1>
+        <div class="data-section">
+            <p>Number of Rows: {{ profile.num_rows }}</p>
+            <p>Number of Columns: {{ profile.num_columns }}</p>
+            <p>Shape: {{ profile.shape }}</p>
+            <p>Size: {{ profile.size }}</p>
+        </div>
+
+        <div class="data-section">
+            <h2>Dimension Fields</h2>
+            <ul>
+                {% for field in profile.dimension_fields %}
+                <li>{{ field }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="data-section">
+            <h2>Measure Fields</h2>
+            <ul>
+                {% for field in profile.measure_fields %}
+                <li>{{ field }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="data-section">
+            <h2>Null Values</h2>
+            <ul>
+                {% for field, value in profile.null_values.items %}
+                <li>{{ field }}: {{ value }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="data-section">
+            <h2>Describe</h2>
+            <div class="data-html">{{ profile.describe|safe }}</div>
+        </div>
+
+        <div class="data-section">
+            <h2>Top 5</h2>
+            <div class="data-html">{{ profile.head|safe }}</div>
+        </div>
+    </div>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,15 @@
+
+
+{% block content %}
+  <h2>Change Data Type</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Change Data Type</button>
+  </form>
+  {% if form.errors %}
+    <div class="error">
+      {{ form.errors }}
+    </div>
+  {% endif %}
+{% endblock %}

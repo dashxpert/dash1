@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div style="background-color: #ecf0f1; padding: 30px; border-radius: 8px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); max-width: 600px; margin: 20px auto; color: #2c3e50;">
+      <h1 style="color: #34495e; text-align: center;">Remove Null Values</h1>
+      <form method="post" style="display: flex; flex-direction: column; align-items: center;">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <button type="submit" style="background-color: #3498db; color: #ecf0f1; padding: 10px; border: none; border-radius: 5px; cursor: pointer; font-size: 1em; margin-top: 20px;">
+              Apply
+          </button>
+      </form>
+  </div>
+{% endblock %}

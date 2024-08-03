@@ -1,0 +1,23 @@
+<!-- pivot_service/templates/find_replace.html -->
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find and Replace</title>
+</head>
+<body>
+    <h1>Find and Replace</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Replace</button>
+    </form>
+</body>
+</html>
+
+{% endblock content %}
